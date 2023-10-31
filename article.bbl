@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{BaezaYates1999}
+Ricardo Baeza-Yates and Berthier Ribeiro-Neto.
+\newblock {\em Modern Information Retrieval}.
+\newblock ACM Press/Addison-Wesley Publishing Co, 1999.
+
+\bibitem{Jurafsky2020}
+Daniel Jurafsky and James~H. Martin.
+\newblock {\em Speech and Language Processing (3rd ed.)}.
+\newblock Prentice Hall, 2020.
+
+\bibitem{Manning2008}
+Christopher~D. Manning, Prabhakar Raghavan, and Hinrich Schütze.
+\newblock {\em Introduction to Information Retrieval}.
+\newblock Cambridge University Press, 2008.
+
+\bibitem{Singhal2012}
+Amit Singhal.
+\newblock Introducing the knowledge graph: Things, not strings.
+\newblock Google Official Blog, 2012.
+
+\bibitem{Smith2018}
+John~R. Smith and Paul~W. Johnson.
+\newblock Challenges and trends in semantic search.
+\newblock {\em ACM Computing Surveys}, 51(3):1--34, 2018.
+
+\bibitem{Vrandecic2014}
+Denny Vrandecic and Markus Krötzsch.
+\newblock Wikidata: A free collaborative knowledgebase.
+\newblock {\em Communications of the ACM}, 57(10):78--85, 2014.
+
+\bibitem{Wilson2019}
+A.~L. Wilson and C.~R. Davis.
+\newblock A survey of semantic search techniques.
+\newblock {\em Journal of Information Retrieval}, 22(3):185--207, 2019.
+
+\end{thebibliography}
