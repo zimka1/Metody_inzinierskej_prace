@@ -1,0 +1,110 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\title[Semantic Search Challenges]{"Challenges in Semantic Search: User Intent and Context"}
+\author{Aliaksei Zimnitski, MSc. Mirwais Ahmadzai}
+\institute[STU]{Slovenská technická univerzita v Bratislave}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Abstract}
+Semantic search is a vital technology in the field of information retrieval, playing a pivotal role in enhancing search accuracy by focusing on understanding user intent and context. This presentation delves into the challenges faced by semantic search systems.
+\end{frame}
+
+\begin{frame}
+\frametitle{Introduction}
+Semantic search revolutionizes information retrieval by focusing on the meaning behind queries. This approach goes beyond keyword matching, emphasizing user intent and context.
+\newline
+\newline
+This comparison highlights key differences in their capabilities.
+\begin{table}
+\centering
+\small % Makes the font smaller
+\setlength{\tabcolsep}{3pt} % Reduces the space between columns
+\renewcommand{\arraystretch}{1.2} % Adjusts the space between rows
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Feature} & \textbf{Trad. Search} & \textbf{Sem. Search} \\ \hline
+Keyword Dependency & High & Low \\ \hline
+Context Understanding & Low & High \\ \hline
+User Intent Interpretation & Limited & Advanced \\ \hline
+Accuracy in Ambiguous Queries & Low & High \\ \hline
+Adaptability to Language Evolution & Low & High \\ \hline
+\end{tabular}
+\caption{Traditional vs Semantic Search}
+\label{tab:compact_search_comparison}
+\end{table}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Resolving User Intent Ambiguity}
+One primary challenge is the ambiguity of user intentions. For example, the query "Apple" could refer to different entities. Techniques like natural language processing help disambiguate these queries.
+\end{frame}
+
+\begin{frame}
+\frametitle{Leveraging Knowledge Graphs}
+Knowledge graphs like Google's Knowledge Graph provide structured information, enhancing the understanding of queries and contexts, thus improving search results accuracy.
+\end{frame}
+
+\begin{frame}
+\frametitle{Adapting to Dynamic Language and Context}
+Semantic search faces the challenge of adapting to the dynamic nature of language and evolving contexts. Constant updates and refinements are necessary for maintaining relevance.
+\end{frame}
+
+\begin{frame}
+\frametitle{NLP in Semantic Search}
+Natural Language Processing (NLP) enables semantic search systems to interpret the complexities of human language, facilitating entity recognition and sentiment analysis.
+\begin{center} 
+Process Diagram: Handling a User Query.
+\end{center} 
+\begin{center} 
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2cm, minimum height=0.8cm, text centered, draw=black, fill=red!30, font=\scriptsize]
+\tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=0.8cm, text centered, draw=black, fill=orange!30, font=\scriptsize]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{tikzpicture}[node distance=1cm]
+\node (start) [startstop] {User Query};
+\node (nlp) [process, below of=start] {NLP Techniques};
+\node (context) [process, below of=nlp] {Context Analysis};
+\node (disambiguate) [process, below of=context] {Disambiguation Process};
+\node (results) [startstop, below of=disambiguate] {Search Results};
+
+\draw [arrow] (start) -- (nlp);
+\draw [arrow] (nlp) -- (context);
+\draw [arrow] (context) -- (disambiguate);
+\draw [arrow] (disambiguate) -- (results);
+
+\end{tikzpicture}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Future Developments}
+The future of semantic search promises more sophisticated search results, with advancements in NLP, machine learning, and knowledge graphs.
+\end{frame}
+
+\begin{frame}
+\frametitle{Challenges in User Privacy and Data Security}
+With the increase in user data processing, ensuring privacy and data security is paramount. This necessitates robust security measures in semantic search systems.
+\end{frame}
+
+\begin{frame}
+\frametitle{Scalability and Efficiency}
+Ensuring the scalability and efficiency of semantic search systems is crucial as they handle an increasing number of queries and vast amounts of data.
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusion}
+Semantic search, while offering improved search accuracy, faces significant challenges in understanding user intent and context. Addressing these is crucial for its future development.
+\end{frame}
+
+\end{document}
